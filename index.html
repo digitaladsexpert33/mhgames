@@ -1,106 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stock Market Basics – Join Free</title>
-  <meta name="description" content="100% free stock market education. Learn chart reading, technical analysis, and risk management. No buy/sell tips. For learning purpose only.">
-  <link rel="canonical" href="https://example.com/">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta name="theme-color" content="#0a0a0a"/>
+  
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1209752244365746');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1209752244365746&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
-  <!-- Performance -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Favicons (optional) -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📊</text></svg>">
+  <title>MH — Download App</title>
+  <link rel="preconnect" href="https://sara777matka.co" crossorigin>
+  <link rel="dns-prefetch" href="//sara777matka.co">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Stock Market Basics – Join Free">
-  <meta property="og:description" content="Learn charts & risk management. No buy/sell tips. 100% educational.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=1600&auto=format&fit=crop">
-
-  <!-- Minimal CSS (inline for speed) -->
   <style>
     :root{
-      --bg1:#0c0c1d;
-      --bg2:#1a1a2b;
-      --brand: #ff6699;
-      --brand-2:#00f0ff;
-      --text:#ffffff;
-      --muted:#b5b5c3;
+      --bg:#0a0a0a; --card:#121214; --gold:#FFD166; --gold-2:#F4C542;
+      --text:#ECEDEE; --muted:#9fa4aa; --line:#1b1c20; --ring:rgba(244,197,66,.35);
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0}
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{height:100%}
     body{
-      font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        linear-gradient(135deg, rgba(0,0,0,.45), rgba(0,0,0,.45)),
-        url('https://images.unsplash.com/photo-1516251193007-45ef944ab0c6?q=80&w=1600&auto=format&fit=crop') no-repeat center/cover fixed;
-      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
-      min-height:100vh;
+      margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      color:var(--text);background:#0a0a0a;
+      background-image:
+        radial-gradient(900px 420px at 100% -10%,rgba(244,197,66,.08),transparent 60%),
+        radial-gradient(700px 420px at 0% 100%,rgba(244,197,66,.06),transparent 60%);
     }
-    .container{
-      max-width:520px; margin:0 auto; padding:24px 18px; text-align:center; min-height:100vh; display:flex; flex-direction:column; justify-content:center;
-      backdrop-filter: saturate(130%);
+    .wrap{min-height:100%;padding-bottom:104px}
+    .container{max-width:520px;margin:0 auto;padding:16px}
+    .card{
+      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01)),var(--card);
+      border:1px solid var(--line); border-radius:18px; padding:16px; position:relative;
+      box-shadow:0 0 0 1px rgba(255,255,255,.02) inset, 0 20px 60px rgba(0,0,0,.55), 0 0 80px var(--ring);
     }
-    .badge{display:inline-block; font-size:.78rem; padding:6px 10px; border:1px solid #2a2a3a; border-radius:999px; color:#d6eaff; background:rgba(0,240,255,.08); margin-bottom:14px}
-    h1{font-size:1.9rem; line-height:1.2; margin:6px 0 10px; background:linear-gradient(90deg,var(--brand-2),var(--brand)); -webkit-background-clip:text; background-clip:text; color:transparent;}
-    .sub{font-size:1rem; color:var(--muted); margin:0 auto 16px; max-width:36ch}
-    .pill{
-      display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:999px; background:rgba(0,255,153,.07); border:1px dashed rgba(0,255,153,.35); color:#d8ffe9; font-size:.9rem; margin:6px 0 18px;
+    .badge{position:absolute;top:10px;right:10px; padding:6px 10px; border-radius:999px;
+      background:linear-gradient(135deg,var(--gold),var(--gold-2)); color:#1a1400; font-size:12px; font-weight:700}
+    .header{display:flex;gap:12px; align-items:center}
+    .logo{width:68px;height:68px;border-radius:16px;object-fit:cover;flex:0 0 auto;
+      box-shadow:0 0 0 3px #191919, 0 0 0 5px rgba(244,197,66,.25)}
+    .title{font-size:18px;font-weight:800;margin:0 0 2px;
+      background:linear-gradient(135deg,var(--gold),#fff);
+      -webkit-background-clip:text;background-clip:text;color:transparent}
+    .sub{font-size:13px;color:var(--muted);margin:0}
+    .rating{display:flex;align-items:center;gap:6px;margin-top:6px}
+    .stars{font-size:14px;letter-spacing:1px}
+
+    .ribbon{
+      margin:12px 0 0; display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:10px;
+      border:1px dashed rgba(244,197,66,.4);
+      background:linear-gradient(90deg,rgba(244,197,66,.14),transparent);
+      color:var(--gold); font-size:12px; font-weight:700;
     }
-    ul.bullets{list-style:none; padding:0; margin:0 0 18px}
-    ul.bullets li{margin:8px 0; color:#e9eef9}
+    .ticker{
+      margin-top:10px; border:1px solid var(--line); border-radius:12px; overflow:hidden;
+      background:#0e0f12; position:relative; height:34px;
+    }
+    .ticker__track{
+      position:absolute; white-space:nowrap; will-change:transform; padding:8px 12px;
+      animation:scrollLeft 14s linear infinite; color:#d9bd6a; font-size:13px;
+    }
+    @keyframes scrollLeft{from{transform:translateX(0)} to{transform:translateX(-50%)}}
+
+    .block{margin-top:14px}
+    .head{color:var(--gold);font-weight:800;font-size:14px;display:flex;align-items:center;gap:8px}
+    .features{margin:10px 0 0; padding:0; list-style:none; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#0e0f12}
+    .features li{display:flex; gap:10px; align-items:center; padding:12px; border-bottom:1px solid #17181c; font-size:14px}
+    .ic{width:28px;height:28px;border-radius:8px;display:grid;place-items:center}
+    .note{font-size:12.5px;color:#b6b8bc;margin:8px 2px 0}
+    .disclaimer{margin:14px 4px 0; font-size:12px; color:#8b8f95; line-height:1.5}
+    .compliance{margin:8px 4px 0; font-size:11.5px; color:#a6a9ad}
+
+    .sticky{
+      position:fixed; left:0; right:0; bottom:0; z-index:50; padding:10px 12px;
+      background:linear-gradient(180deg,rgba(0,0,0,.0),rgba(0,0,0,.4) 12%, #0a0a0ae6 30%);
+      backdrop-filter:saturate(1.1) blur(6px);
+    }
     .cta{
-      display:inline-block; text-decoration:none; background:var(--brand); color:#041b14; padding:14px 18px; font-weight:700; border-radius:12px; box-shadow:0 0 0 0 rgba(0,255,153,.6); transform:translateZ(0);
-      transition:transform .15s ease;
-      animation:pulse 1.6s infinite;
+      position:relative; display:flex; align-items:center; justify-content:center; gap:8px;
+      width:100%; max-width:520px; margin:0 auto;
+      background:linear-gradient(135deg,var(--gold),var(--gold-2));
+      color:#1f1600; text-decoration:none; font-weight:900;
+      padding:14px 18px; border-radius:999px; font-size:17px;
+      box-shadow:0 10px 34px rgba(244,197,66,.45);
+      overflow:hidden;
     }
-    .cta:active{transform:scale(.98)}
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(0,255,153,.55)}
-      70%{box-shadow:0 0 0 20px rgba(0,255,153,0)}
-      100%{box-shadow:0 0 0 0 rgba(0,255,153,0)}
-    }
-    .fineprint{font-size:.86rem; color:var(--muted); margin:18px auto 0; max-width:44ch}
-    .disclaimer{font-size:.78rem; color:#9aa4b2; margin:18px auto 0; max-width:50ch}
-    .safe{display:flex; align-items:center; justify-content:center; gap:8px; margin-top:14px; color:#a1ffd6; font-size:.9rem}
-    .shield{width:18px; height:18px; display:inline-block; border-radius:4px; background:linear-gradient(135deg,#0df,#0f9)}
-    footer{opacity:.8; margin-top:22px; font-size:.78rem; color:#9aa4b2}
+    .mini{font-size:11.5px; color:#2b2100; opacity:.8}
+    .cta-fomo{max-width:520px; margin:4px auto 0; text-align:center; font-size:12.5px; color:#d9bd6a;}
   </style>
 </head>
 <body>
-  <main class="container">
-    <span class="badge">100% Educational • Policy Safe</span>
-    <h1>Stock Market Basics – Join Free</h1>
-    <p class="sub">Learn index behaviour & risk management</p>
 
-    <div class="pill">🚫 No Buy/Sell Tips • ✅ For Learning Purpose Only</div>
+  <div class="wrap">
+    <div class="container">
+      <article class="card">
+        <span class="badge">Limited-time</span>
 
-    <ul class="bullets" aria-label="What you'll learn">
-      <li>• Chart basics & risk rules (no return promises)</li>
-      <li>• How to read trends without speculation</li>
-      <li>• Market discipline & common mistakes</li>
-    </ul>
+        <header class="header">
+          <img class="logo" loading="lazy" alt="Sara777 Logo"
+            src="mh.jpeg">
+          <div>
+            <h1 class="title">MH Matka</h1>
+            <p class="sub">Fast & secure withdrawals • Gold edition UI</p>
+            <div class="rating">
+              <div class="stars">⭐️⭐️⭐️⭐️☆</div>
+              <small class="sub"><span id="liveUsers">2,173</span> users active now</small>
+            </div>
+          </div>
+        </header>
 
-    <!-- CTA goes to a page-specific bridge -->
-    <a class="cta" href="bridge-lp79.html" rel="nofollow">Start Learning</a>
+        <span class="ribbon">Verified by 50,000+ members</span>
 
-    <div class="safe"><span class="shield" aria-hidden="true"></span> Ad Policy Friendly Content</div>
+        <div class="ticker">
+          <div class="ticker__track" id="tickerTrack">
+            ⏳ Today’s special tips dropping soon • ⚡ Instant auto-withdrawal enabled • 🛡️ 100% verified app • 🎯 Join before the next update •
+            ⏳ Today’s special tips dropping soon • ⚡ Instant auto-withdrawal enabled • 🛡️ 100% verified app • 🎯 Join before the next update •
+          </div>
+        </div>
 
-    <p class="fineprint">We focus on concepts & frameworks suitable for beginners.</p>
-    <p class="disclaimer"><em>This website is for educational purposes only. We do not provide investment, trading, or financial advice.</em></p>
+        <section class="block">
+          <div class="head">★ Features</div>
+          <ul class="features">
+            <li><span class="ic">₹</span><b>Minimum Deposit:</b>&nbsp;₹200</li>
+            <li><span class="ic">🏧</span><b>Minimum Withdrawal:</b>&nbsp;₹1,000</li>
+            <li><span class="ic">⚡</span><b>Auto Withdrawal:</b>&nbsp;24/7</li>
+            <li><span class="ic">🔐</span>Secure & Instant Deposits / Withdrawals</li>
+            <li><span class="ic">✅</span>100% Verified App</li>
+            <li><span class="ic">📞</span>24×7 Customer Support</li>
+          </ul>
+          <p class="note">*Minimum Deposit ₹200 · Minimum Withdrawal ₹1,000 (for new users)</p>
+        </section>
 
-    <footer>© <span id="y"></span> Market Basics Learning Hub</footer>
-  </main>
+        <p class="disclaimer">
+          This website is for entertainment and educational purposes only. We do not provide financial advice or guarantees.
+        </p>
+        <p class="compliance">18+ only. Use responsibly and follow local laws and platform policies.</p>
+      </article>
+    </div>
+  </div>
 
+  <!-- Sticky CTA -->
+  <div class="sticky">
+    <a id="joinBtn" class="cta" href="https://mhmatka.io/mhgames.apk">
+      📲 Download App <span class="mini">• Safe & Fast</span>
+    </a>
+    <div class="cta-fomo">Hurry! Next update soon — join before it drops.</div>
+  </div>
+
+  <!-- Script -->
   <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
+    (function(){
+      const redirectUrl = "https://mhmatka.io/mhgames.apk";
+      const joinBtn = document.getElementById('joinBtn');
+
+      // 🔥 FIRE ONLY SUBSCRIBE EVENT
+      joinBtn.addEventListener('click', function(e){
+        e.preventDefault();
+
+        try {
+          fbq('track', 'Subscribe', {
+            source: 'cta_click',
+            page: 'sara777_landing'
+          });
+        } catch(err){
+          console.warn("FBQ Subscribe Error:", err);
+        }
+
+        setTimeout(function(){
+          window.location = redirectUrl;
+        }, 180);
+      });
+
+      const live = document.getElementById('liveUsers');
+      let base = 2173;
+      setInterval(()=>{
+        base += (Math.random()>.5?1:-1)*Math.floor(Math.random()*4);
+        live.textContent = base.toLocaleString('en-IN');
+      }, 1200);
+
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = redirectUrl;
+      document.head.appendChild(link);
+
+      const track = document.getElementById('tickerTrack');
+      track.innerHTML += ' ' + track.innerHTML;
+
+    })();
   </script>
 </body>
 </html>
